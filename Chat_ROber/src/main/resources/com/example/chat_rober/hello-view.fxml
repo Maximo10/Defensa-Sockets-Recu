@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="615.0" prefWidth="390.0" style="-fx-background-color: #ece5dd;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chat_rober.HelloController">
+
+    <!-- Título -->
+    <Label alignment="CENTER" layoutX="95.0" layoutY="20.0" prefHeight="40.0" prefWidth="200.0" text="Grupo Rober" textAlignment="CENTER">
+        <font>
+            <Font name="System Bold" size="25.0" />
+        </font>
+    </Label>
+
+    <!-- Botón nueva ventana -->
+    <Button fx:id="nuevaVentana" layoutX="10.0" layoutY="20.0" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #0cae00; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 10;" text="+Nueva" />
+
+    <!-- TextArea donde se mostrarán los mensajes -->
+    <TextArea fx:id="Area_texto" editable="false" layoutX="10.0" layoutY="70.0" prefHeight="450.0" prefWidth="370.0" style="-fx-border-color: green; -fx-border-width: 3; -fx-border-radius: 5;" wrapText="true" />
+
+    <!-- Campo para escribir mensaje -->
+    <TextField fx:id="bara_texto" layoutX="10.0" layoutY="530.0" prefHeight="30.0" prefWidth="270.0" promptText="Escribe tu mensaje..." style="-fx-background-color: #ffffff; -fx-text-fill: #000000; -fx-prompt-text-fill: #888888; -fx-border-color: green; -fx-padding: 5; -fx-border-width: 2; -fx-border-radius: 5;" />
+
+    <!-- Botón enviar mensaje -->
+    <Button fx:id="btn_enviar" layoutX="290.0" layoutY="530.0" prefHeight="30.0" prefWidth="90.0" style="-fx-background-color: #25d366; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 5;" text="Enviar" />
+
+</AnchorPane>
